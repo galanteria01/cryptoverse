@@ -12,6 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
     </style>
 
     <style name="Theme.Cryptoverse.NoActionBar">
@@ -20,6 +21,13 @@
     </style>
 
     <style name="Theme.Cryptoverse.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CustomSplashScreenTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_cryptoverse</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.Cryptoverse</item>
+    </style>
 
     <style name="Theme.Cryptoverse.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
