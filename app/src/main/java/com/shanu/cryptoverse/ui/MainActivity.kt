@@ -25,7 +25,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         installSplashScreen()
         setContent {
-            Main()
+            CryptoverseTheme {
+                Main()
+            }
         }
     }
 }

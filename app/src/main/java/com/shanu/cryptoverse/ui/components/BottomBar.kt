@@ -1,14 +1,15 @@
 package com.shanu.cryptoverse.ui.components
 
-import androidx.compose.material.*
+import androidx.compose.material.BottomNavigation
+import androidx.compose.material.BottomNavigationItem
+import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
-import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 
 @Composable
@@ -19,7 +20,7 @@ fun BottomNavigationBar(navController: NavController) {
         NavigationItem.News
     )
     BottomNavigation (
-        backgroundColor = Color(0xFF272727)
+        backgroundColor = MaterialTheme.colors.background
             ) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentDestination = navBackStackEntry?.destination
@@ -36,9 +37,7 @@ fun BottomNavigationBar(navController: NavController) {
                     }
                 },
                 icon = { Icon(painterResource(id = item.icon), contentDescription = item.title) },
-                selectedContentColor = Color.Yellow,
-                unselectedContentColor = Color.White,
-
+                selectedContentColor = MaterialTheme.colors.primary
             )
         }
     }
