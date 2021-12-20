@@ -34,7 +34,7 @@ fun CryptoScreen() {
 
             Box(
                 modifier = Modifier
-                    .background(MaterialTheme.colors.primary)
+                    .background(MaterialTheme.colors.surface)
                     .fillMaxWidth()
                     .height(150.dp)
                     .pin()
@@ -45,8 +45,8 @@ fun CryptoScreen() {
                 modifier = Modifier
                     .road(Alignment.CenterStart, Alignment.BottomEnd)
                     .padding(60.dp, 16.dp, 16.dp, 16.dp),
-                color = Color.White,
-                fontSize = textSize
+                color = MaterialTheme.colors.secondary,
+                fontSize = textSize,
             )
 
         }

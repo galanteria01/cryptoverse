@@ -11,6 +11,7 @@ private val DarkColorPalette = darkColors(
     primaryVariant = Yellow700,
     background = DarkBackground,
     surface = DarkBackground,
+    secondary = LightText
 
 )
 
@@ -18,7 +19,8 @@ private val LightColorPalette = lightColors(
     primary = Yellow500,
     primaryVariant = Yellow700,
     background = LightBackground,
-    surface = LightBackground
+    surface = LightBackground,
+    secondary = DarkText
 )
 
 @Composable

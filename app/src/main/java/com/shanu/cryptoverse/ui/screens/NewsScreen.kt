@@ -27,7 +27,7 @@ fun NewsScreen() {
 
             Box(
                 modifier = Modifier
-                    .background(MaterialTheme.colors.primary)
+                    .background(MaterialTheme.colors.surface)
                     .fillMaxWidth()
                     .height(150.dp)
                     .pin()
@@ -38,7 +38,7 @@ fun NewsScreen() {
                 modifier = Modifier
                     .road(Alignment.CenterStart, Alignment.BottomEnd)
                     .padding(60.dp, 16.dp, 16.dp, 16.dp),
-                color = Color.White,
+                color = MaterialTheme.colors.secondary,
                 fontSize = textSize
             )
 
@@ -46,4 +46,9 @@ fun NewsScreen() {
     ) {
 
     }
+}
+
+@Composable
+fun NewsItem() {
+
 }
